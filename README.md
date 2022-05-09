@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Sing Me A Song
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Sing me a song is an web application for song recommendation. Make, receive and rate music recommendations. The application has the following features:
 
-## Available Scripts
+- Recommendations ranking
+- Create recommendations
+- Recommendations timeline
+- Random recommendation
 
-In the project directory, you can run:
+## Technologies
 
-### `npm start`
+The following tools were used in the construction of full-stack project "Sing me a song":
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p>
+  <img style='margin: 5px;' src='https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=white'>
+  <img style='margin: 5px;' src='https://img.shields.io/badge/-ReactJs-323330?style=for-the-badge&logo=react&logoColor=white'>
+   <img style='margin: 5px;' src='https://img.shields.io/badge/TypeScript-323330?style=for-the-badge&logo=typescript&logoColor=white'>
+   <img style='margin: 5px;' src='https://img.shields.io/badge/Jest-323330?style=for-the-badge&logo=Jest&logoColor=white'>
+	<img style='margin: 5px;' src='https://img.shields.io/badge/Cypress-323330?style=for-the-badge&logo=Cypress&logoColor=white'>
+	<img style='margin: 5px;' src='https://img.shields.io/badge/node.js-323330?style=for-the-badge&logo=node.js&logoColor=white'>
+	<img style='margin: 5px;' src='https://img.shields.io/badge/postgres-323330?style=for-the-badge&logo=postgresql&logoColor=white'>
+	<img style='margin: 5px;' src='https://img.shields.io/badge/Prisma-323330?style=for-the-badge&logo=Prisma&logoColor=white'>
+</p>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to run
 
-### `npm test`
+### Front-End
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone this repository
+2. Install dependencies
 
-### `npm run build`
+```bash
+npm i
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Run the project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Run tests
 
-### `npm run eject`
+```bash
+npx cypress open
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Back-End
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone this repository
+2. Install dependencies
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+npm i
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. Create database
 
-## Learn More
+```bash
+npx prisma init
+npx prisma migrate dev
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Run the project
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npx ts-node src/server.ts
+```
 
-### Code Splitting
+5. Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm run test
+```
