@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect } from "react";
 
 import useRecommendations from "../../../hooks/api/useRecommendations";

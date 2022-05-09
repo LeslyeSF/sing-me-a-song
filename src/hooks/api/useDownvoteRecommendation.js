@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import * as service from "../../services/recommendations";
 
 import useAsync from "../useAsync";

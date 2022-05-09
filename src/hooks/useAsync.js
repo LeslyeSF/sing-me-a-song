@@ -1,3 +1,5 @@
+/* eslint-disable no-shadow */
+/* eslint-disable prettier/prettier */
 import { useState, useEffect } from "react";
 
 export default function useAsync(handler, immediate = true) {
@@ -22,7 +24,7 @@ export default function useAsync(handler, immediate = true) {
       act();
     }
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    
   }, []);
 
   return {

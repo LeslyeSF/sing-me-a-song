@@ -1,3 +1,7 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable prettier/prettier */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from "react";
 import styled from "styled-components";
 

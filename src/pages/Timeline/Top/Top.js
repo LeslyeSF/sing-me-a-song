@@ -1,3 +1,7 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable prettier/prettier */
 import useTopRecommendations from "../../../hooks/api/useTopRecommendations";
 
 import Recommendation from "../../../components/Recommendation";

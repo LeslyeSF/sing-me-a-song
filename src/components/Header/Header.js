@@ -1,3 +1,6 @@
+/* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable prettier/prettier */
 import styled from "styled-components";
 import { VscPlayCircle } from "react-icons/vsc";
 
